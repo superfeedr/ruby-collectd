@@ -137,6 +137,7 @@ module Collectd
   class Values
     attr_reader :interval
     def initialize(interval)
+      puts "init!"
       @interval = interval
       @counters = {}
       @gauges = {}

@@ -90,10 +90,12 @@ describe Collectd::ProcStats do
       g = @server.gauges[[:plugin1, :plugin_instance1, :memory, "VmRSS"]]
       g[0].should be_kind_of(Fixnum)
     end
+    
     it 'should report VmSize' do
       g = @server.gauges[[:plugin1, :plugin_instance1, :memory, "VmSize"]]
       g[0].should be_kind_of(Fixnum)
     end
+    
   end
   context 'when polling cpu' do
     it 'should report user time' do

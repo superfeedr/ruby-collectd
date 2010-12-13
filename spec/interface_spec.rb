@@ -1,7 +1,7 @@
 $: << File.dirname(__FILE__) + '/../lib'
 require 'collectd'
 
-describe Collectd do
+describe "Collectd" do
   before(:each) do
     @server = mock('Server')
     Collectd << @server

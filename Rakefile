@@ -9,7 +9,7 @@ Jeweler::Tasks.new do |s|
   s.summary = "Send collectd statistics from Ruby"
   s.email = "astro@spaceboyz.net"
   s.homepage = "http://github.com/astro/ruby-collectd"
-  s.authors = ["Stephan Maka"]
+  s.authors = ["Stephan Maka", "Julien Genestoux"]
   s.files =  FileList["[A-Z]*", "{lib,spec,examples}/**/*"]
   #s.add_dependency 'eventmachine'
 end
